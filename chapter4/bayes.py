@@ -16,7 +16,7 @@ def createVocabList(dataSet):
     for document in dataSet:
         vocabSet = vocabSet | set(document)
     return list(vocabSet)
-# 次集模型 每个词只出现一次 只关心每个词出现与否
+# 词集模型 每个词只出现一次 只关心每个词出现与否
 def setOfWords2Vec(vocabList, inputSet):
     returnVec = [0] * len(vocabList)
     for word in inputSet:
